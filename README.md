@@ -45,9 +45,8 @@ Our target audience includes NBA enthusiasts, analysts, fans, and anyone keen on
 
 ### Exploratory Data Analysis
 
-The dataset contain information from three NBA player from 2023 season.
+We have pre-processed the data collected from these two sites to include the shooting performance of LeBron James, James Harden, and Stephen Curry during the 2023 NBA season. Our preprocessing included scatter plots of all shots, two-point shots and three-point shots by three players and bar plots of shots' angle and distance by them, respectively. The collation gives us an initial idea of the type and size of the data, which is useful for further visualisation.
 
-The information un process contains the following columns
 
 Here's a Markdown table with the provided column names, descriptions, data types, and additional information about the range or options:
 
