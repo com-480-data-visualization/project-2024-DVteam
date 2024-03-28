@@ -45,8 +45,61 @@ Our target audience includes NBA enthusiasts, analysts, fans, and anyone keen on
 
 ### Exploratory Data Analysis
 
-> Pre-processing of the data set you chose
-> - Show some basic statistics and get insights about the data
+The dataset contain information from three NBA player from 2023 season.
+
+The information un process contains the following columns
+
+Here's a Markdown table with the provided column names, descriptions, data types, and additional information about the range or options:
+
+| Column Name        | Description                                                  | Data Type | 
+|--------------------|--------------------------------------------------------------|-----------|
+| Player*             | Name of the player (LeBron James, James Harden, Stephen Curry) | String |
+| Top                | Vertical position on the court where the shot was taken.    | Numeric   |
+| Left               | Horizontal position on the court where the shot was taken.  | Numeric   |
+| Angle*              | Shot angle relative to the board, indicating basketball trajectory towards the hoop. | Numeric |
+| Date               | Date when the shot was taken (e.g., Oct 18, 2022).          | String    |
+| Qtr                | Quarter in which the shot was attempted.                    | String    |
+| Time Remaining     | Time remaining in the quarter when the shot was attempted.   | String  |
+| Result             | Indicates shot success.                                      | Boolean   |
+| Shot Type          | Describes attempted shot type.                               | String    |
+| Distance (ft)      | Distance in feet from hoop to shot position.                 | Numeric |
+| Lead               | Indicates whether the team was leading during the shot.      | Boolean |
+| Team Score  | Team's score (in points) when the shot was taken.           | Numeric   |
+| Opponent Team Score| Opposing team's score (in points) when the shot was taken.  | Numeric |
+| Opponent           | Abbreviation for the opposing team.                          | String    |
+| Team               | Abbreviation for player's team.                             | String    |
+| Season             | Season during which shots were taken.                        | Numeric   |
+| Color              | Represents the color code associated with the shot.          | String    |
+
+\* note: new columns added to the dataset calculated from given data.
+
+#### Statistical Information from Numerical Data
+
+|       |    top   |   left   | shot_type | distance_ft | team_score | opponent_team_score | season |
+|-------|----------|----------|-----------|-------------|-------------------|---------------------|--------|
+| count | 3992.000 | 3992.000 | 3992.000  | 3992.000    | 3992.000          | 3992.000            | 3992.0 |
+| mean  | 175.107  | 245.341  | 2.444     | 15.829      | 60.269            | 59.195              | 2023.0 |
+| std   | 101.824  | 104.620  | 0.497     | 10.816      | 34.789            | 34.793              | 0.0    |
+| min   | 26.000   | -3.000   | 2.000     | 0.000       | 0.000             | 0.000               | 2023.0 |
+| 25%   | 73.000   | 197.000  | 2.000     | 4.000       | 32.000            | 31.000              | 2023.0 |
+| 50%   | 159.000  | 241.000  | 2.000     | 18.000      | 61.000            | 59.000              | 2023.0 |
+| 75%   | 279.000  | 301.000  | 3.000     | 26.000      | 89.000            | 88.000              | 2023.0 |
+| max   | 389.000  | 483.000  | 3.000     | 36.000      | 140.000           | 135.000             | 2023.0 |
+
+
+
+![Basketball Image](Charts/AllShots.png)
+![Basketball Image](Charts/CourtBool.png)
+![Basketball Image](Charts/DistanceBool.png)
+![Basketball Image](Charts/AngleBool.png)
+![Basketball Image](Charts/TimeResult.png)
+![Basketball Image](Charts/TimeType.png)
+![Basketball Image](Charts/CourtMin.png)
+
+
+
+
+
 
 ### Related work
 
