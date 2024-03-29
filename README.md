@@ -45,7 +45,7 @@ Our target audience includes NBA enthusiasts, analysts, fans, and anyone keen on
 
 ### Exploratory Data Analysis
 
-We have pre-processed the data collected from these two sites to include the shooting performance of LeBron James, James Harden, and Stephen Curry during the 2023 NBA season. Our preprocessing included scatter plots of all shots, two-point shots and three-point shots by three players and bar plots of shots' angle and distance by them, respectively. The collation gives us an initial idea of the type and size of the data, which is useful for further visualisation.
+We have pre-processed the data collected from these two sites to include the shooting performance of LeBron James, James Harden, and Stephen Curry during the 2023 NBA season. Our preprocessing included scatter plots of all shots, two-point shots and three-point shots by three players and bar plots of shots' angle and distance by them, respectively. The collation gives us an initial idea of the type and size of the data, which is useful for further visualization.
 
 
 Here's a Markdown table with the provided column names, descriptions, data types, and additional information about the range or options:
@@ -88,16 +88,45 @@ Here's a Markdown table with the provided column names, descriptions, data types
 
 
 ![Basketball Image](Charts/AllShots.png)
-![Basketball Image](Charts/CourtBool.png)
+
+#### Results in Shots Metrics: What is the place on the court where players score the most?
 ![Basketball Image](Charts/DistanceBool.png)
+We can see two peaks in the graph, first at a short distance from the rim and later at a distance equivalent to the 3-point line. We can also distinguish that shots at short distance are more effective than at long distance.
+
 ![Basketball Image](Charts/AngleBool.png)
+
+It is possible to see that most of the shots are made from a position facing the rim and less from the sides of the court. These differences are accentuated depending on the player, and it is possible to notice it slightly in the figures of the shot from the field, where the position is seen like the following figure
+
+![Basketball Image](Charts/CourtBool.png)
+
+#### Taking Time into Account: Is there a strategy that depends on the time remaining in the game?
 ![Basketball Image](Charts/TimeResult.png)
-![Basketball Image](Charts/TimeType.png)
+In a player we can see a big difference in making more shots in the last seconds. However, in the rest there is also an increase for the last remaining minute.
+
 ![Basketball Image](Charts/CourtMin.png)
 
+It is possible to see that regardless of the number of minutes remaining, there is no clear trend of the place or type of launch as time progresses.
+
+![Basketball Image](Charts/TimeType.png)
+
+Although there is an increase in the shots made in the last minutes of the game, there is no such increase (or it is not considerably greater) for the success of the shots.
 
 
+#### Leading Status: Is there a change in behavior when they are losing or winning?
+![Basketball Image](Charts/LeadBool.png)
 
+It is not possible to notice a trend in the distribution of shots depending on whether they are winning the game or not. In all cases shots are seen at different distances and angles.
+
+![Basketball Image](Charts/LeadShot.png)
+
+We can see in the figure that there is no change in behavior in terms of the type of shot depending on whether they are winning or losing.
+
+![Basketball Image](Charts/LeadResult.png)
+It can be interpreted from the graph that when they are losing there is a greater number of missed shots than successful ones and this trend reverts to when they are winning. Only in the case of James Harden, when they win, there is no significant difference in the number of successes and failures.
+
+
+#### Exploratory Data Analysis Conclusions
+Analysis of LeBron James, James Harden, and Stephen Curry's shooting performance during the 2023 NBA season reveals consistent trends. Shots are most successful near the rim and from three-point range, with a preference for frontal shots. While more shots are attempted in the final seconds of quarters, success rates don't always increase, indicating potential risk-taking. Shot selection remains consistent throughout the game, irrespective of time or game situation. Additionally, there's little difference in shot distribution based on winning or losing, though more missed shots occur when the team is behind. Overall, players demonstrate consistent shooting strategies and adaptability, with minimal influence from external factors on their performance.
 
 
 ### Related work
