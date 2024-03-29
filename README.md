@@ -132,13 +132,17 @@ Analysis of LeBron James, James Harden, and Stephen Curry's shooting performance
 ### Related work
 #### Others' work
 For this dataset, previous analyses conducted by others include a "Last Minutes Shot Analysis" and other preliminary data analysis and visualization using
-`sns` and `AutoViz`. Here are the links:
-**Last Minutes Shot Analysis**: https://www.kaggle.com/code/aqsasadaf/last-minutes-shot-analysis/notebook
+`sns` and `AutoViz`. Here are the links:  
+
+**Last Minutes Shot Analysis**: https://www.kaggle.com/code/aqsasadaf/last-minutes-shot-analysis/notebook  
+
 **preliminary data analysis**: https://www.kaggle.com/code/deepanshuluthra/nba-player-shot-analysis/notebook, https://www.kaggle.com/code/ryotapy/nba-player-shot-dataset-2023/notebook
 
 #### Originality
-**Comprehensive and Multi-Faceted Analysis**: Our analysis goes beyond basic statistics to incorporate various aspects like shot distance, angle, time remaining, and game status (leading or trailing). This multi-dimensional approach provides a more holistic understanding of player performance.
-**Interactive Visualizations**: Our focus on creating interactive and dynamic visualizations offers a more engaging way to explore the data. This method makes it easier for users to understand complex patterns and draw meaningful conclusions.
+**Comprehensive and Multi-Faceted Analysis**: Our analysis goes beyond basic statistics to incorporate various aspects like shot distance, angle, time remaining, and game status (leading or trailing). This multi-dimensional approach provides a more holistic understanding of player performance.  
+
+**Interactive Visualizations**: Our focus on creating interactive and dynamic visualizations offers a more engaging way to explore the data. This method makes it easier for users to understand complex patterns and draw meaningful conclusions.  
+
 **Time and Situation-Based Insights**: Analyzing player performance based on the time remaining in the game and their team's leading status adds a strategic dimension to our analysis. This approach helps in understanding how pressure and game context influence player decisions and performance.
 
 #### Inspiration
