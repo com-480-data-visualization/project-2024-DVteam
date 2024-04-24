@@ -22,7 +22,7 @@ nav {
 .nav-vis {
   justify-content: right;
   background-color: #005ad5;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .nav-vis a {
@@ -86,6 +86,7 @@ footer {
 .img-container {
   display: flex;
   justify-content: left;
+  padding-bottom: 5%;
 }
 .img-container-2 {
 justify-content: right;
@@ -168,22 +169,14 @@ button:hover {
 }
 
 
-.vis-bot{
-  display: flex;
-  justify-content: center;
-  padding: 5%;
-}
-
 
 .container .midcolumn .vis-bot a{
   color: #fff;
   font-family: "Roboto-Regular", sans-serif;
-  padding: 2%;
+  padding:5%;
   justify-content: center;
   background-color: #005ad5;
-  padding-left: 5%;
-  padding-right: 5%;
-  text-decoration: none;
+  border-radius: 15%;
 }
 
 .container .midcolumn .vis-bot a:hover {
