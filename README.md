@@ -6,6 +6,13 @@
 | *Shiyi Huang*               |*378200*          |
 
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
+## 📈 Milestone 2 (26th April, 5pm)
+
+**10% of the final grade**
+
+## 🎉 Milestone 3 (31st May, 5pm)
+
+**80% of the final grade**
 
 ## 🏁 Milestone 1 (29th March, 5pm)
 
@@ -147,13 +154,7 @@ For this dataset, previous analyses conducted by others include a "Last Minutes 
 
 #### Inspiration
 We will reference various sports analysis websites and magazines. For instance, the visualizations in ESPN's NBA section or the analyses in Sports Illustrated offer deep insights into player performance with interactive and visually appealing formats. Websites like FiveThirtyEight provide a unique combination of statistical rigor and accessible visualization styles, which can inspire our work. Additionally, although not the same dataset, similar NBA data has been processed by others, such as the 2014-2015 season's data. There are many related repositories on GitHub (such as https://github.com/SergioLlana/nba-shot-analysis), and we will draw from similar processing methods.
-## 📈 Milestone 2 (26th April, 5pm)
 
-**10% of the final grade**
-
-## 🎉 Milestone 3 (31st May, 5pm)
-
-**80% of the final grade**
 
 
 ## Late policy
