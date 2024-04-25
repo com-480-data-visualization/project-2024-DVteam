@@ -8,7 +8,7 @@
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 ## 📈 Milestone 2 (26th April, 5pm)
 
-**10% of the final grade**
+[The skeleton of our website](https://com-480-data-visualization.github.io/project-2024-DVteam/)
 
 ## 🎉 Milestone 3 (31st May, 5pm)
 
