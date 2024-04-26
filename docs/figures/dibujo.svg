@@ -23,15 +23,16 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.84985459"
-     inkscape:cx="331.23314"
-     inkscape:cy="215.33096"
+     inkscape:zoom="0.55455105"
+     inkscape:cx="421.06132"
+     inkscape:cy="611.3053"
      inkscape:window-width="1376"
      inkscape:window-height="777"
      inkscape:window-x="0"
      inkscape:window-y="37"
      inkscape:window-maximized="0"
-     inkscape:current-layer="Court_Markings" /><defs
+     inkscape:current-layer="layer1"
+     inkscape:lockguides="false" /><defs
      id="defs1"><inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : 148.5 : 1"
@@ -41,7 +42,8 @@
        id="perspective1" /></defs><g
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
-     id="layer1"><g
+     id="layer1"
+     transform="matrix(1.7562702,0,0,1.7562702,-60.003285,50.289387)"><g
        id="Court_Markings"
        transform="matrix(0.26458333,0,0,0.26458333,23.165564,-8.9450823)">
 		<g
@@ -82,7 +84,7 @@
    width="436.41"
    height="1.41"
    id="rect6"
-   style="fill:#000000;display:inline" />
+   style="display:inline;fill:#000000" />
 				
 			</g>
 		

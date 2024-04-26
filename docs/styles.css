@@ -111,6 +111,10 @@ h3 {
   display: flex;
   justify-content: space-evenly;
 }
+.container-3 {
+  margin: 0 auto;
+  padding: 40px;
+}
 
 .team-member-2 {
   background-color: #fff;
@@ -189,4 +193,38 @@ button:hover {
 .container .midcolumn .vis-bot a:hover {
   font-family: "Roboto-Bold", sans-serif;
   color: #fff;
+}
+
+.vis-1 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 10%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.vis-2 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  
+}
+.vis-3 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.vis-text{
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 20px;
+  width: 30%;
 }
