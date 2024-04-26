@@ -8,8 +8,9 @@
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 ## 📈 Milestone 2 (26th April, 5pm)
 
-Here is the skeleton of our website: [The skeleton of our website](https://com-480-data-visualization.github.io/project-2024-DVteam/)
-Here is the link to milestone 2 PDF: [Milestone 2]( https://github.com/com-480-data-visualization/project-2024-DVteam/blob/master/Milestone%202.pdf)
+Skeleton of our website: [The skeleton of our website](https://com-480-data-visualization.github.io/project-2024-DVteam/)
+
+Link to milestone 2 PDF: [Milestone 2]( https://github.com/com-480-data-visualization/project-2024-DVteam/blob/master/Milestone%202.pdf)
 
 ## 🎉 Milestone 3 (31st May, 5pm)
 
