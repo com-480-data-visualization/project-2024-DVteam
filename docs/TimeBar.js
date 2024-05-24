@@ -38,7 +38,7 @@ playerSelect.addEventListener('change', function () {
     }
 
     // use D3.js open csv file 
-    d3.csv(csvFile).then(function(loadedData) {
+    d3.csv(csvFile, function(loadedData) {
         loadedData.forEach(function(d) {
             var timeComponents = d.time_remaining.split(":");
             var minutes = parseInt(timeComponents[0]);
@@ -55,8 +55,6 @@ playerSelect.addEventListener('change', function () {
 
         data = loadedData;
 
-    }).catch(function(error) {
-        console.error("Error loading the CSV file:", error);
     });
 });
 
