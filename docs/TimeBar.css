@@ -1,0 +1,133 @@
+ input[type='range'] {
+     -webkit-appearance: none;
+     width: 100%;
+     background: #ddd;
+ }
+
+ input[type='range']::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     appearance: none;
+     width: 20px;
+     height: 20px;
+     background: #666;
+     cursor: pointer;
+ }
+
+ input[type='range']::-moz-range-thumb {
+     width: 20px;
+     height: 20px;
+     background: #666;
+     cursor: pointer;
+ }
+
+ #startButton,
+ #playerButton {
+     font-family: Calibri, sans-serif;
+     font-size: 16px;
+     font-weight: bold;
+     background: linear-gradient(to bottom, #0ABAB5, #069798);
+     color: white;
+     width: 50px;
+     height: 30px;
+     border: none;
+     border-radius: 5px;
+     text-align: center;
+     line-height: 30px;
+     padding: 0;
+     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+     transition: transform 0.1s;
+ }
+
+ #playerButton:active {
+     transform: scale(0.95);
+ }
+
+ #timeBar {
+     width: 500px;
+ }
+
+ #playerSelect {
+     display: none;
+     font-family: 'Comic Sans MS', cursive, sans-serif;
+     color: #000000;
+     background-color: #f0f0f0;
+     border: none;
+     border-radius: 4px;
+     padding: 5px;
+ }
+
+ #playerChoice {
+     font-family: 'Comic Sans MS', cursive, sans-serif;
+     color: black;
+     font-weight: bold;
+ }
+
+ .svg-container {
+     margin-top: 10px;
+     margin-right: 150px;
+ }
+
+ .vis-3 {
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .controls {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 20px;
+     position: relative;
+     font-family: Calibri, sans-serif;
+ }
+
+ .vis-text {
+            font-family: "Roboto-Regular", sans-serif;
+                font-size: 20px;
+                width: 75%;
+                margin: 0 auto;
+                text-align: center;
+ }
+
+ svg {
+     font-weight: bold;
+ }
+
+ .timebar-container {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .time-label {
+     font-family: Calibri, sans-serif;
+     font-size: 14px;
+     font-weight: bold;
+     position: absolute;
+     bottom: -20px;
+ }
+
+ .time-label.left {
+     left: 0;
+ }
+
+ .time-label.right {
+     right: 0;
+ }
+
+ .quarter-label {
+     position: absolute;
+     top: -20px;
+     left: 50%;
+     transform: translateX(-50%);
+     font-family: Calibri, sans-serif;
+     font-size: 14px;
+     font-weight: bold;
+ }
