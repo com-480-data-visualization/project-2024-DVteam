@@ -1,39 +1,44 @@
-var playerButton = document.getElementById('playerButton');
-var playerSelect = document.getElementById('playerSelect');
-var playerChoice = document.getElementById('playerChoice');
+//var playerButton = document.getElementById('playerButton');
+var playerSelect = document.getElementById('player');
+//var playerChoice = document.getElementById('playerChoice');
 
 // player switch
-playerButton.addEventListener('click', function () {
-    playerSelect.style.display = 'block';
-});
+// playerButton.addEventListener('click', function () {
+//     playerSelect.style.display = 'block';
+// });
 
 
-playerSelect.addEventListener('change', function () {
-    playerChoice.textContent = playerSelect.value;
-    playerSelect.style.display = 'none';
+//playerSelect.addEventListener('change', function () {
+function changePlayer3(newPlayer) {
 
-    if (playerSelect.value === ' - ') {
-    // Clear the playerChoice and data when "-" is selected
-    playerChoice.textContent = '';
-    data = [];
-    // Call a function to clear the displayed data/visualization
-    clearVisualization();
-    return;
-    }
+    //playerChoice.textContent = playerSelect.value;
+    //playerSelect.style.display = 'none';
+
+    // if (playerSelect.value === ' - ') {
+    // // Clear the playerChoice and data when "-" is selected
+    // //playerChoice.textContent = '';
+    // data = [];
+    // // Call a function to clear the displayed data/visualization
+    // clearVisualization();
+    // return;
+    // }
 
     let csvFile;
-    switch (playerSelect.value) {
-        case 'LeBron James':
+    switch (newPlayer) {
+        case 'james':
+            console.log('james');
             csvFile = '../Data/1_lebron_james_shot_chart_1_2023.csv';
             break;
-        case 'James Harden':
+        case 'harden':
+            console.log('harden');
             csvFile = '../Data/2_james_harden_shot_chart_2023.csv';
             break;
-        case 'Stephen Curry':
+        case 'curry':
+            console.log('curry');
             csvFile = '../Data/3_stephen_curry_shot_chart_2023.csv';
             break;
         default:
-            console.error('Unknown player: ' + playerSelect.value);
+            console.error('Unknown player: ');
             return;
     }
 
@@ -56,8 +61,11 @@ playerSelect.addEventListener('change', function () {
         data = loadedData;
 
     });
-});
+}
+//);
 
+
+//TODO: Change this to the css and add a hover and state change
 var startButton = document.getElementById("startButton");
 
 startButton.addEventListener("mousedown", function () {
@@ -110,7 +118,7 @@ function updatePaths(timeValue) {
                 var path = svg.append("path")
                     .attr("fill", "none")
                     //.attr("stroke", d.color)
-                    .attr("stroke", d.result ? "rgba(144, 238, 144, " + (1 - i * opacityStep) + ")" : "rgba(173, 216, 230, " + (1 - i * opacityStep) + ")")
+                    .attr("stroke", d.result ? "rgba(0, 0, 245, " + (1 - i * opacityStep) + ")" : "rgba(234, 51, 35, " + (1 - i * opacityStep) + ")")
                     .attr("stroke-width", 2)
                     .attr("d", `M${d.distance + i * offset},450 Q${(200 + d.distance + i * offset) / 2},100 200,180`);
 

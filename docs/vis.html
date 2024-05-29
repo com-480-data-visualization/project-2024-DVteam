@@ -24,6 +24,63 @@
     </nav>
     <div class="container-3">
         <h1>Visualizations</h1>
+        <div class="select-player">
+            <div>
+                <!-- div izq -->
+                <div>
+                    <!-- Select a player -->
+                    <h2>Select a player</h2>
+                </div>
+                <div class="player-img">
+                    <!-- player images -->
+                    <div>
+                        <!-- player 1 image -->
+                        <img id='player-harden' class="player-img-img" src="figures/harden.png" alt="Lebron James" width="100" height="100" onclick="changePlayer('harden'); changePlayer1('harden'); changePlayer3('harden')">
+                    </div>
+                    <div>
+                        <!-- player 2 image -->
+                        <img id='player-james' class="player-img-img" src="figures/james.png" alt="Lebron James" width="100" height="100" onclick="changePlayer('james'); changePlayer1('james'); changePlayer3('james')">
+                    </div>
+                    <div>
+                        <!-- player 3 image -->
+                        <img id='player-curry' class="player-img-img" src="figures/curry.png" alt="Lebron James" width="100" height="100" onclick="changePlayer('curry'); changePlayer1('curry'); changePlayer3('curry')">
+                    </div>
+                </div>
+            </div>
+            <div class="vl"></div>
+            <div class="player-selected">
+                <!-- Div der -->
+                <div>
+                    <!-- player selected image -->
+                    <image id="player-img" src="figures/white.png" alt="player" width="200" height="200">        
+                </div>
+                <div>
+                    <!-- player selected stats -->
+                    <div>
+                        <!-- player selected name -->
+                        <h2 id="player-name"></h2>
+                    </div>
+                    <div class="player-stats">
+                        <!-- player selected stats -->
+                        <div>
+                            <p id="player-born"></p>
+                            <p id="player-since"></p>
+                        </div>
+                        <div>
+                            <p id="player-height"></p>
+                            <p id="player-weight"></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>  
+            <!-- <select name="player" id="player" >
+                        <option value="empty">Select Player</option>
+                        <option value="james">Lebron James</option>
+                        <option value="curry">Stephen Curry</option>
+                        <option value="harden">James Harden</option>
+                    </select> -->
+        </div>
         <div class="vis-1">
             <!-- <div> -->
                 <div class="vis-area">
@@ -31,12 +88,7 @@
             </div>
             <div class="vis-params">
                 <div class="vis-select">
-                    <select name="player" id="player" >
-                        <option value="empty">Select Player</option>
-                        <option value="james">Lebron James</option>
-                        <option value="curry">Stephen Curry</option>
-                        <option value="harden">James Harden</option>
-                    </select>
+                    
                     <select name="shot" id="shot">
                         <option value="all_shots">All shoots</option>
                         <option value="score">Scored</option>
@@ -104,9 +156,9 @@
         <text x="330" y="470" font-family="Calibri" font-size="18" text-anchor="middle">2 points</text>
         <text x="800" y="470" font-family="Calibri" font-size="18" text-anchor="middle">3 points</text>
 
-        <rect x="1050" y="120" width="30" height="30" fill="rgba(144, 238, 144, 0.3)" /> 
+        <rect x="1050" y="120" width="30" height="30" fill="rgba(0, 0, 245, 1)" /> 
         <text x="1090" y="140" font-family="Calibri" font-size="18">Score</text> <!-- Score -->
-        <rect x="1050" y="160" width="30" height="30" fill="rgba(173, 216, 230, 0.3)" /> 
+        <rect x="1050" y="160" width="30" height="30" fill="rgba(234, 51, 35, 1)" /> 
         <text x="1090" y="180" font-family="Calibri" font-size="18">Miss</text> <!-- Miss -->
     
         <rect x="200" y="450" width="280" height="30" fill="rgba(224, 198, 139, 0.1)" filter="url(#f1)" rx="10" ry="10" /> <!-- 浅黄色方块 -->
@@ -125,14 +177,14 @@
                 <!-- buttom -->
                 <button id="startButton">Start</button>
                  <!-- player -->
-                <button id="playerButton">Player</button>
-                <select id="playerSelect" >
+                <!-- <button id="playerButton">Player</button> -->
+                <!-- <select id="playerSelect" >
                     <option value=" - "> - </option>
                     <option value="LeBron James">LeBron James</option>
                     <option value="James Harden">James Harden</option>
                     <option value="Stephen Curry">Stephen Curry</option>
                 </select>
-                <div id="playerChoice"> </div>
+                <div id="playerChoice"> </div> -->
             </div>
 
          <div class="vis-text">
@@ -150,6 +202,7 @@
 
     </div>
     <!-- <script src="midcourt.js"></script> -->
+    <script src="player.js"></script>
     <script src="vis1.js"></script>
     <script src="TimeBar.js"></script>
 </body>
