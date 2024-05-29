@@ -80,8 +80,9 @@ function processCSVData(path, shot) {
 //listeners
 
 //change player
-document.getElementById('player').addEventListener('change', function () {
-    const selectedOptions = Array.from(this.selectedOptions).map(option => option.value);
+//document.getElementById('player').addEventListener('change', function () {
+function changePlayer1(newPlayer) {
+    selectedOptions = newPlayer;
     if (selectedOptions.includes('james')) {
         path = '/Data/1_lebron_james_shot_chart_1_2023.csv';
     } else if (selectedOptions.includes('curry')) {
@@ -97,7 +98,8 @@ document.getElementById('player').addEventListener('change', function () {
     if (path != '') {
         processCSVData(path, shot);
     }
-});
+}
+//);
 
 //change shoot
 document.getElementById('shot').addEventListener('change', function () {

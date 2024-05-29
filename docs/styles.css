@@ -287,3 +287,42 @@ button:hover {
             justify-content: space-between;
             margin-top: 10px;
         }
+
+
+
+.select-player {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 10%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.player-img{
+  display: flex;
+  justify-content: space-between;
+}
+
+.selected {
+            border: 2px solid blue;
+            border-radius: 8px;
+        }
+
+.vl {
+  border-left: 2px solid rgba(128, 128, 128, 0.502);
+/* height: 500px; */
+  margin: 5px;
+}
+
+.player-stats{
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-selected{
+  display: flex;
+  justify-content: center;
+}
