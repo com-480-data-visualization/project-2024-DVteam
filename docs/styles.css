@@ -210,7 +210,6 @@ button:hover {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
   justify-content: center;
   
 }
@@ -326,3 +325,16 @@ button:hover {
   display: flex;
   justify-content: center;
 }
+
+.tooltip {
+          position: absolute;
+          background: white;
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          visibility: hidden;
+      }
+
+/* svg {
+    background: black;
+} */
