@@ -18,7 +18,7 @@ Our website:  [Press here to see our website!](https://com-480-data-visualizatio
 
 ProcessBook: 
 
-Vedio:
+Video:
 
 ## 📈 Milestone 2 (26th April, 5pm)
 
