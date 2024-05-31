@@ -86,7 +86,7 @@ function changePlayer1(newPlayer) {
     if (selectedOptions.includes('james')) {
         path = 'Data/james.csv';
     } else if (selectedOptions.includes('curry')) {
-        path = 'Data/curry3.csv';
+        path = 'Data/curry.csv';
     } else if (selectedOptions.includes('harden')) {
         path = 'Data/harden.csv';
     } else if (selectedOptions.includes('empty')) {

@@ -24,7 +24,6 @@ function changePlayer3(newPlayer) {
     // }
     const svg = d3.select("#chart");
     svg.selectAll("path").remove();
-
     
 
     let csvFile;
