@@ -14,17 +14,21 @@ The National Basketball Association (NBA) is known for its thrilling games and e
 
 ### Link to Milestone 3 ⭐⭐
 Below is the link to our website, you can find the visualization of LeBron James, James Harden, and Stephen Curry's exciting performance in NBA 2023 season.
+
 Our website:  [Press here to see our website!](https://com-480-data-visualization.github.io/project-2024-DVteam/)
 
 Want to know the design path and details of our visualization? Check our processbook below! 
+
 ProcessBook:  [Press here to see our Process Book!](https://github.com/com-480-data-visualization/project-2024-DVteam/blob/master/Process%20book.pdf)
 
 Here is the vedio with explanation of our visualization. There might be lag because zoom is stuck, but it's fine on the webpage.
-Video:https:[Link to our vedio ](//youtu.be/cmURJThA7jE)
+
+Video:https:[Link to our video ](//youtu.be/cmURJThA7jE)
 
 For reference here is the data base we've chosen. 
 
 Player Shots Analysis: In-Depth Insights and Performance in 2023: [NBA 2023 Player Shot Dataset](https://www.kaggle.com/datasets/dhavalrupapara/nba-2023-player-shot-dataset)
+
 Player's performance information: [Basketball Reference](https://www.basketball-reference.com/)
 [https://www.kaggle.com/datasets/dhavalrupapara/nba-2023-player-shot-dataset](https://www.kaggle.com/datasets/dhavalrupapara/nba-2023-player-shot-dataset)
 
