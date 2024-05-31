@@ -1,20 +1,6 @@
 var playerImg = document.getElementById('player-img');
 
 
-
-// document.getElementById('player').addEventListener('change', function () {
-//     const selectedOptions = Array.from(this.selectedOptions).map(option => option.value);
-//     if (selectedOptions.includes('james')) {
-//         playerImg.src = 'figures/james.png';
-//     } else if (selectedOptions.includes('curry')) {
-//         playerImg.src = 'figures/curry.png';
-//     } else if (selectedOptions.includes('harden')) {
-//         playerImg.src = 'figures/harden.png';
-//     } else if (selectedOptions.includes('empty')) {
-//         playerImg.src = 'figures/white.png';
-//     }
-// });
-
 function changePlayer(newPlayer) {
     var playerImages = document.querySelectorAll('.player-img-img');
     playerImages.forEach(function (img) {
