@@ -1,5 +1,5 @@
 function processData(csvFile, containerId, title) {
-    d3.csv(csvFile, function (data) {
+    d3.csv(csvFile, function (error, data) {
     // d3.csv(csvFile).then(data => {
         data.forEach(d => {
             d['distance_ft'] = +d['distance_ft'];
@@ -202,15 +202,15 @@ function changePlayer2(newPlayer){
     clearChart("#chart3");
 
     if (newPlayer == 'james'){
-        processData("Data/1_lebron_james_shot_chart_1_2023.csv", "#chart2", "LeBron James 2023 Statistics");
+        processData("Data/james.csv", "#chart2", "LeBron James 2023 Statistics");
         
     }
     else if (newPlayer == 'curry'){
-        processData("Data/3_stephen_curry_shot_chart_2023.csv", "#chart3", "Stephen Curry 2023 Statistics");
+        processData("Data/curry.csv", "#chart3", "Stephen Curry 2023 Statistics");
         
     }
     else if (newPlayer == 'harden'){
-        processData("Data/2_james_harden_shot_chart_2023.csv", "#chart1", "James Harden 2023 Statistics");
+        processData("Data/harden.csv", "#chart1", "James Harden 2023 Statistics");
 
     }
     else if (newPlayer == 'empty'){

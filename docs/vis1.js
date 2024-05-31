@@ -84,11 +84,11 @@ function processCSVData(path, shot) {
 function changePlayer1(newPlayer) {
     selectedOptions = newPlayer;
     if (selectedOptions.includes('james')) {
-        path = 'Data/1_lebron_james_shot_chart_1_2023.csv';
+        path = 'Data/james.csv';
     } else if (selectedOptions.includes('curry')) {
-        path = 'Data/3_stephen_curry_shot_chart_2023.csv';
+        path = 'Data/curry3.csv';
     } else if (selectedOptions.includes('harden')) {
-        path = 'Data/2_james_harden_shot_chart_2023.csv';
+        path = 'Data/harden.csv';
     } else if (selectedOptions.includes('empty')) {
         path = '';
     }
