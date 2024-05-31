@@ -47,11 +47,11 @@ function processData(csvFile, containerId, title) {
         flatData.sort((a, b) => new Date(a.date) - new Date(b.date));
 
         // Define SVG dimensions and radius for the rings
-        const width = 650; //800
-        const height = 900; //1000
+        const width = 800; //800
+        const height = 700; //1000
         const margin = { top: 50, right: 50, bottom: 50, left: 50 };
         const radius = 1.25 * (Math.min(width, height) / 2 - Math.max(margin.top, margin.right, margin.bottom, margin.left));
-
+                    //1.25
         // Create SVG element with black background
         const svg = d3.select(containerId).append("svg")
             .attr("width", width)
@@ -61,14 +61,14 @@ function processData(csvFile, containerId, title) {
             .attr("transform", `translate(${width / 2},${height / 2})`);
 
         //Add title
-        svg.append("text")
-            .attr("x", 0)
-            .attr("y", -height / 2 + 20) // Adjust this value to move the title up or down
-            .attr("text-anchor", "middle")
-            .attr("fill", "black")
-            .attr("font-size", "20px")
-            .attr("font-weight", "bold")
-            .text(title);
+        // svg.append("text")
+        //     .attr("x", 0)
+        //     .attr("y", -height / 2 + 20) // Adjust this value to move the title up or down
+        //     .attr("text-anchor", "middle")
+        //     .attr("fill", "black")
+        //     .attr("font-size", "20px")
+        //     .attr("font-weight", "bold")
+        //     .text(title);
 
         // Create tooltip
         const tooltip = d3.select("body").append("div")

@@ -174,12 +174,35 @@ button:hover {
 
 .vis-bot{
   display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+  margin: 5px;
+}
+.vis-bot-2{
+  display: flex;
   justify-content: center;
   padding: 5%;
 }
 
+.a2 {
+  color: #005ad5;
+  font-family: "Roboto-Regular", sans-serif;
+  padding: 2%;
+  justify-content: center;
+  /* background-color: #005ad5; */
+  padding-left: 5%;
+  padding-right: 5%;
+  text-decoration: none;
+  border: 2px solid #005ad5;
+}
 
-.container .midcolumn .vis-bot a{
+.a2:hover {
+  font-family: "Roboto-Bold", sans-serif;
+  /* color: #034198; */
+}
+
+
+.a1{
   color: #fff;
   font-family: "Roboto-Regular", sans-serif;
   padding: 2%;
@@ -190,7 +213,27 @@ button:hover {
   text-decoration: none;
 }
 
-.container .midcolumn .vis-bot a:hover {
+.btn-1 {
+  color: #fff;
+  font-family: "Roboto-Regular", sans-serif;
+  padding: 2%;
+  justify-content: center;
+  background-color: #005ad5;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-decoration: none;
+
+}
+.btn-1:hover {
+  font-family: "Roboto-Bold", sans-serif;
+  color: #fff;
+  background-color: #005ad5;
+
+}
+
+
+
+.a1:hover {
   font-family: "Roboto-Bold", sans-serif;
   color: #fff;
 }
@@ -318,7 +361,11 @@ button:hover {
 
 .player-stats{
   display: flex;
-  justify-content: space-between;
+}
+
+.stats-column {
+  margin: 2%;
+
 }
 
 .player-selected{
@@ -335,6 +382,11 @@ button:hover {
           visibility: hidden;
       }
 
+.radialchart{
+  display: flex;
+  justify-content: center;
+
+}
 /* svg {
     background: black;
 } */
