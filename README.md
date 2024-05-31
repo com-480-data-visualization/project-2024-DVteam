@@ -18,7 +18,7 @@ Our website:  [Press here to see our website!](https://com-480-data-visualizatio
 
 ProcessBook:  [Press here to see our Process Book!](https://github.com/com-480-data-visualization/project-2024-DVteam/blob/master/Process%20book.pdf)
 
-Video:https:[Link to our vedio:](//youtu.be/cmURJThA7jE)
+Video:https:[Link to our vedio](//youtu.be/cmURJThA7jE)
 
 ## 📈 Milestone 2 (26th April, 5pm)
 
