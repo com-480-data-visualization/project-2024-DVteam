@@ -13,12 +13,20 @@
 The National Basketball Association (NBA) is known for its thrilling games and exceptional athletes that attract fans worldwide. As the 2023 season approaches, analyzing player data is critical for fans, analysts, and coaches alike, allowing them to clearly compare information about different players. However, the vast amount of available performance data is often raw and unprocessed, lacking systematic organization and insightful visualization. To address these challenges, we selected a dataset that includes comprehensive performance metrics for popular players such as LeBron James, James Harden, and Stephen Curry for the 2023 NBA season. The dataset provides detailed information on shot attempts, timing, distance, and scoring. We have converted this data into an interactive visualization format to get a clear picture of a player's strengths and performance.
 
 ### Link to Milestone 3 ⭐⭐
-
+Below is the link to our website, you can find the visualization of LeBron James, James Harden, and Stephen Curry's exciting performance in NBA 2023 season.
 Our website:  [Press here to see our website!](https://com-480-data-visualization.github.io/project-2024-DVteam/)
 
+Want to know the design path and details of our visualization? Check our processbook below! 
 ProcessBook:  [Press here to see our Process Book!](https://github.com/com-480-data-visualization/project-2024-DVteam/blob/master/Process%20book.pdf)
 
-Video:https:[Link to our vedio](//youtu.be/cmURJThA7jE)
+Here is the vedio with explanation of our visualization. There might be lag because zoom is stuck, but it's fine on the webpage.
+Video:https:[Link to our vedio ](//youtu.be/cmURJThA7jE)
+
+For reference here is the data base we've chosen. 
+
+Player Shots Analysis: In-Depth Insights and Performance in 2023: [NBA 2023 Player Shot Dataset](https://www.kaggle.com/datasets/dhavalrupapara/nba-2023-player-shot-dataset)
+Player's performance information: [Basketball Reference](https://www.basketball-reference.com/)
+[https://www.kaggle.com/datasets/dhavalrupapara/nba-2023-player-shot-dataset](https://www.kaggle.com/datasets/dhavalrupapara/nba-2023-player-shot-dataset)
 
 ## 📈 Milestone 2 (26th April, 5pm)
 
@@ -32,8 +40,6 @@ Link to milestone 2 PDF: [Milestone 2]( https://github.com/com-480-data-visualiz
 
 This is a preliminary milestone to let you set up goals for your final project and assess the feasibility of your ideas.
 Please, fill the following sections about your project.
-
-*(max. 2000 characters per section)*
 
 ### Dataset
 
