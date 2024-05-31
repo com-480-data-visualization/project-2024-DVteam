@@ -7,7 +7,6 @@
     <title>Basketball Vis</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="TimeBar.css">
-    <!-- <script src="https://d3js.org/d3.v6.min.js"></script> -->
     <script src="https://d3js.org/d3.v4.js"></script>
 </head>
 
@@ -26,42 +25,48 @@
         <h1>Visualizations</h1>
         <div class="select-player">
             <div>
-                <!-- div izq -->
+
                 <div>
                     <!-- Select a player -->
                     <h2>Select a player</h2>
                 </div>
                 <div class="player-img">
-                    <!-- player images -->
+
                     <div>
-                        <!-- player 1 image -->
-                        <img id='player-harden' class="player-img-img" src="figures/harden.png" alt="Lebron James" width="120" height="100" onclick="changePlayer('harden'); changePlayer1('harden'); changePlayer2('harden'); changePlayer3('harden')">
+
+                        <img id='player-harden' class="player-img-img" src="figures/harden.png" alt="Lebron James"
+                            width="120" height="100"
+                            onclick="changePlayer('harden'); changePlayer1('harden'); changePlayer2('harden'); changePlayer3('harden')">
                     </div>
                     <div>
-                        <!-- player 2 image -->
-                        <img id='player-james' class="player-img-img" src="figures/james.png" alt="Lebron James" width="120" height="100" onclick="changePlayer('james'); changePlayer1('james'); changePlayer2('james'); changePlayer3('james')">
+
+                        <img id='player-james' class="player-img-img" src="figures/james.png" alt="Lebron James"
+                            width="120" height="100"
+                            onclick="changePlayer('james'); changePlayer1('james'); changePlayer2('james'); changePlayer3('james')">
                     </div>
                     <div>
-                        <!-- player 3 image -->
-                        <img id='player-curry' class="player-img-img" src="figures/curry.png" alt="Lebron James" width="120" height="100" onclick="changePlayer('curry'); changePlayer1('curry'); changePlayer2('curry'); changePlayer3('curry')">
+
+                        <img id='player-curry' class="player-img-img" src="figures/curry.png" alt="Lebron James"
+                            width="120" height="100"
+                            onclick="changePlayer('curry'); changePlayer1('curry'); changePlayer2('curry'); changePlayer3('curry')">
                     </div>
                 </div>
             </div>
             <div class="vl"></div>
             <div class="player-selected">
-                <!-- Div der -->
+
                 <div>
-                    <!-- player selected image -->
-                    <image id="player-img" src="figures/white.png" alt="player" width="200" height="200">        
+
+                    <image id="player-img" src="figures/white.png" alt="player" width="200" height="200">
                 </div>
                 <div>
-                    <!-- player selected stats -->
+
                     <div>
-                        <!-- player selected name -->
+
                         <h2 id="player-name"></h2>
                     </div>
                     <div class="player-stats">
-                        <!-- player selected stats -->
+
                         <div class="stats-column">
                             <p id="player-born"></p>
                             <p id="player-since"></p>
@@ -73,22 +78,17 @@
 
                     </div>
                 </div>
-            </div>  
-            <!-- <select name="player" id="player" >
-                        <option value="empty">Select Player</option>
-                        <option value="james">Lebron James</option>
-                        <option value="curry">Stephen Curry</option>
-                        <option value="harden">James Harden</option>
-                    </select> -->
+            </div>
+
         </div>
         <div class="vis-1">
-            <!-- <div> -->
-                <div class="vis-area">
+
+            <div class="vis-area">
                 <svg id="dataviz_area" height=500 width=500></svg>
             </div>
             <div class="vis-params">
                 <div class="vis-select">
-                    
+
                     <select name="shot" id="shot">
                         <option value="all_shots">All shoots</option>
                         <option value="score">Scored</option>
@@ -96,21 +96,27 @@
                     </select>
                 </div>
                 <div class="slidecontainer">
-                    <input  type="range"  class="slider hexagon-thumb" id="hexsize" min="4" max="15" value="5">
+                    <input type="range" class="slider hexagon-thumb" id="hexsize" min="4" max="15" value="5">
                     <div class="slider-labels">
                         <span id="minLabel">-</span>
                         <span id="maxLabel">+</span>
                     </div>
                 </div>
-            <!-- </div> -->
+
 
             </div>
-            
+
             <div class="vis-text">
                 <h1>Shot Heatmap</h1>
-                <p>The basketball court is one of the most iconic settings in sports, where the location of a shot determines the number of points awarded for a successful attempt. Therefore, visualizing player performance on the court provides valuable insights into their effectiveness from different areas. The primary challenge in creating this visualization is to accurately group shots and determine the positions where players perform best. </p>
-                <p>To tackle this challenge, the key design decision involves using hexagons to divide the court into small, representative zones. Tessellating the court with hexagons allows for flexible scaling, enabling detailed analysis of shooting performance from various positions.</p>
-        </div>
+                <p>The basketball court is one of the most iconic settings in sports, where the location of a shot
+                    determines the number of points awarded for a successful attempt. Therefore, visualizing player
+                    performance on the court provides valuable insights into their effectiveness from different areas.
+                    The primary challenge in creating this visualization is to accurately group shots and determine the
+                    positions where players perform best. </p>
+                <p>To tackle this challenge, the key design decision involves using hexagons to divide the court into
+                    small, representative zones. Tessellating the court with hexagons allows for flexible scaling,
+                    enabling detailed analysis of shooting performance from various positions.</p>
+            </div>
         </div>
         <div class="vis-2">
             <div class="vis-chart">
@@ -120,79 +126,77 @@
             </div>
             <div class="vis-text">
                 <h1>Season Shot Statistics</h1>
-                <p>This visualization is a radial shot chart to evaluate shooting performance overtime. Each point represent a successful shot, with color coding and size variation to show the type and volume of shots. Interactive tooltips helps viewers to explore the data.</p>
+                <p>This visualization is a radial shot chart to evaluate shooting performance overtime. Each point
+                    represent a successful shot, with color coding and size variation to show the type and volume of
+                    shots. Interactive tooltips helps viewers to explore the data.</p>
             </div>
         </div>
 
-    <div class="vis-3">
-      <div class="svg-container">
-    <svg  id="chart" width="1200" height="550" xmlns="http://www.w3.org/2000/svg">
-        <!-- filter for 3d -->
-        <defs>
-            <filter id="f1" x="-50%" y="-50%" width="200%" height="200%">
-                <feOffset result="offOut" in="SourceAlpha" dx="3" dy="3" />
-                <feGaussianBlur result="blurOut" in="offOut" stdDeviation="2" />
-                <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-            </filter>
-        </defs>
-    
-        <!-- axis -->
-        <line x1="200" y1="450" x2="1400" y2="450" stroke="black" stroke-width="3" />
-        <line x1="200" y1="450" x2="200" y2="150" stroke="black" stroke-width="3" />
-    
-        <!-- line -->
-        <line x1="480" y1="445" x2="480" y2="455" stroke="black" />
-        <line x1="195" y1="180" x2="205" y2="180" stroke="black" />
-    
-        <text x="480" y="470" font-family="Calibri" font-size="18" text-anchor="middle">7.24m</text>
-        <text x="170" y="180" font-family="Calibri" font-size="18" text-anchor="middle"
-            transform="rotate(-90 170,180)">3.05m</text>
-    
-        <text x="130" y="455" font-family="Calibri" font-size="18">Distance</text>
-        <text x="210" y="150" font-family="Calibri" font-size="18">Basketball Hoop</text>
-        <text x="200" y="470" font-family="Calibri" font-size="18">0</text>
-    
-        <text x="330" y="470" font-family="Calibri" font-size="18" text-anchor="middle">2 points</text>
-        <text x="800" y="470" font-family="Calibri" font-size="18" text-anchor="middle">3 points</text>
+        <div class="vis-3">
+            <div class="svg-container">
+                <svg id="chart" width="1200" height="550" xmlns="http://www.w3.org/2000/svg">
 
-        <rect x="1050" y="120" width="30" height="30" fill="rgba(0, 0, 245, 1)" /> 
-        <text x="1090" y="140" font-family="Calibri" font-size="18">Score</text> <!-- Score -->
-        <rect x="1050" y="160" width="30" height="30" fill="rgba(234, 51, 35, 1)" /> 
-        <text x="1090" y="180" font-family="Calibri" font-size="18">Miss</text> <!-- Miss -->
-    
-        <rect x="200" y="450" width="280" height="30" fill="rgba(224, 198, 139, 0.1)" filter="url(#f1)" rx="10" ry="10" /> <!-- 浅黄色方块 -->
-        <rect x="480" y="450" width="920" height="30" fill="rgba(171, 191, 189, 0.1)" filter="url(#f1)" rx="10" ry="10" /> <!-- 浅棕色方块 -->
-    </svg>
-      </div>
+                    <defs>
+                        <filter id="f1" x="-50%" y="-50%" width="200%" height="200%">
+                            <feOffset result="offOut" in="SourceAlpha" dx="3" dy="3" />
+                            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="2" />
+                            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                        </filter>
+                    </defs>
 
-        <div class="controls">
-                <!-- timebar -->
+
+                    <line x1="200" y1="450" x2="1400" y2="450" stroke="black" stroke-width="3" />
+                    <line x1="200" y1="450" x2="200" y2="150" stroke="black" stroke-width="3" />
+
+
+                    <line x1="480" y1="445" x2="480" y2="455" stroke="black" />
+                    <line x1="195" y1="180" x2="205" y2="180" stroke="black" />
+
+                    <text x="480" y="470" font-family="Calibri" font-size="18" text-anchor="middle">7.24m</text>
+                    <text x="170" y="180" font-family="Calibri" font-size="18" text-anchor="middle"
+                        transform="rotate(-90 170,180)">3.05m</text>
+
+                    <text x="130" y="455" font-family="Calibri" font-size="18">Distance</text>
+                    <text x="210" y="150" font-family="Calibri" font-size="18">Basketball Hoop</text>
+                    <text x="200" y="470" font-family="Calibri" font-size="18">0</text>
+
+                    <text x="330" y="470" font-family="Calibri" font-size="18" text-anchor="middle">2 points</text>
+                    <text x="800" y="470" font-family="Calibri" font-size="18" text-anchor="middle">3 points</text>
+
+                    <rect x="1050" y="120" width="30" height="30" fill="rgba(0, 0, 245, 1)" />
+                    <text x="1090" y="140" font-family="Calibri" font-size="18">Score</text>
+                    <rect x="1050" y="160" width="30" height="30" fill="rgba(234, 51, 35, 1)" />
+                    <text x="1090" y="180" font-family="Calibri" font-size="18">Miss</text>
+
+                    <rect x="200" y="450" width="280" height="30" fill="rgba(224, 198, 139, 0.1)" filter="url(#f1)"
+                        rx="10" ry="10" /> 
+                    <rect x="480" y="450" width="920" height="30" fill="rgba(171, 191, 189, 0.1)" filter="url(#f1)"
+                        rx="10" ry="10" /> 
+                </svg>
+            </div>
+
+            <div class="controls">
+
                 <div class="timebar-container">
                     <span class="time-label left">0 min</span>
                     <input type="range" id="timeBar" min="0" max="100" value="0" style="margin-left: 5px;">
                     <span class="time-label right">12 min</span>
                     <div class="quarter-label">NBA One Quarter</div>
                 </div>
-                <!-- buttom -->
+
                 <button class="btn-1" id="startButton">Start</button>
-                 <!-- player -->
-                <!-- <button id="playerButton">Player</button> -->
-                <!-- <select id="playerSelect" >
-                    <option value=" - "> - </option>
-                    <option value="LeBron James">LeBron James</option>
-                    <option value="James Harden">James Harden</option>
-                    <option value="Stephen Curry">Stephen Curry</option>
-                </select>
-                <div id="playerChoice"> </div> -->
+
             </div>
 
-         <div class="vis-text">
-            <h1> Time tracking</h1>
-            <p>This section visualizes NBA players' shooting statistics versus time. the time bar represents the NBA one quarter, which
-            is 12 minutes. the visualization shows a side view of a basketball court. Press start to begin our data
-            visualization!</p>
-            
-         </div>       
+            <div class="vis-text">
+                <h1> Time tracking</h1>
+                <p>This section visualizes NBA players' shooting statistics versus time. the time bar represents the NBA
+                    one quarter, which
+                    is 12 minutes. the visualization shows a side view of a basketball court. Press start to begin our
+                    data
+                    visualization!</p>
+
+            </div>
         </div>
 
 
@@ -204,4 +208,5 @@
     <script src="vis1.js"></script>
     <script src="TimeBar.js"></script>
 </body>
+
 </html>
