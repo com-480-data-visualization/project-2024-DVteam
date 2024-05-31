@@ -27,15 +27,15 @@ function changePlayer3(newPlayer) {
     switch (newPlayer) {
         case 'james':
             console.log('james');
-            csvFile = '../Data/1_lebron_james_shot_chart_1_2023.csv';
+            csvFile = 'Data/1_lebron_james_shot_chart_1_2023.csv';
             break;
         case 'harden':
             console.log('harden');
-            csvFile = '../Data/2_james_harden_shot_chart_2023.csv';
+            csvFile = 'Data/2_james_harden_shot_chart_2023.csv';
             break;
         case 'curry':
             console.log('curry');
-            csvFile = '../Data/3_stephen_curry_shot_chart_2023.csv';
+            csvFile = 'Data/3_stephen_curry_shot_chart_2023.csv';
             break;
         default:
             console.error('Unknown player: ');
