@@ -68,13 +68,13 @@ function changePlayer3(newPlayer) {
 //TODO: Change this to the css and add a hover and state change
 var startButton = document.getElementById("startButton");
 
-startButton.addEventListener("mousedown", function () {
-    startButton.style.background = "linear-gradient(to bottom, #069798, #0ABAB5)";
-});
+// startButton.addEventListener("mousedown", function () {
+//     startButton.style.background = "linear-gradient(to bottom, #069798, #0ABAB5)";
+// });
 
-startButton.addEventListener("mouseup", function () {
-    startButton.style.background = "linear-gradient(to bottom, #0ABAB5, #069798)";
-});
+// startButton.addEventListener("mouseup", function () {
+//     startButton.style.background = "linear-gradient(to bottom, #0ABAB5, #069798)";
+// });
 
 var timeBar = document.getElementById("timeBar");
 
@@ -83,16 +83,33 @@ var interval;
 // startButton 
 let data;
 
+//divide data into the intervals
+// function divideData(data) {
+//     var intervals = [];
+//     window.interval = setInterval(function () {
+//         if (parseFloat(0) < timeBar.max) {
+//             timeBar.value = parseFloat(timeBar.value) + 0.1;
+//             updatePaths(timeBar.value);
+//         }
+//     }, 100);
+// }
 document.getElementById("startButton").addEventListener("click", function () {
+    console.log('press start')
+    const svg = d3.select("#chart");
+    svg.selectAll("path").remove();
+    svg.selectAll("path").remove();
     if (parseFloat(timeBar.value) == timeBar.max) {
         timeBar.value = timeBar.min;
     }
+    console.log("timeBarmax");
+    console.log(timeBar.max);
 
     clearInterval(window.interval);
 
     var increment = 0.5;
 
     window.interval = setInterval(function () {
+        console.log(timeBar.value);
         if (parseFloat(timeBar.value) < timeBar.max) {
             timeBar.value = parseFloat(timeBar.value) + increment;
             updatePaths(timeBar.value);
@@ -100,16 +117,18 @@ document.getElementById("startButton").addEventListener("click", function () {
             clearInterval(window.interval);
         }
     }, 100);
+
 });
 
 function updatePaths(timeValue) {
+    console.log("updatePaths: start")
     const svg = d3.select("#chart");
 
-    svg.selectAll("path").remove();
+    //svg.selectAll("path").remove();
 
-    const numPaths = 3;  
+    const numPaths = 1;  
     const offset = 5;   
-    const opacityStep = 0.3;  
+    const opacityStep = 0.2;  
 
     data.forEach(function(d) {
         if (d.normalized_time * 100 <= timeValue) {
@@ -118,7 +137,7 @@ function updatePaths(timeValue) {
                 var path = svg.append("path")
                     .attr("fill", "none")
                     //.attr("stroke", d.color)
-                    .attr("stroke", d.result ? "rgba(0, 0, 245, " + (1 - i * opacityStep) + ")" : "rgba(234, 51, 35, " + (1 - i * opacityStep) + ")")
+                    .attr("stroke", d.result ? "rgba(0, 0, 245, " + ( opacityStep) + ")" : "rgba(234, 51, 35, " + (opacityStep) + ")")
                     .attr("stroke-width", 2)
                     .attr("d", `M${d.distance + i * offset},450 Q${(200 + d.distance + i * offset) / 2},100 200,180`);
 
@@ -128,10 +147,11 @@ function updatePaths(timeValue) {
                     .attr("stroke-dasharray", totalLength + " " + totalLength)
                     .attr("stroke-dashoffset", totalLength)
                     .transition()
-                        .duration(100)
+                        .duration(150)
                         .ease(d3.easeLinear)
                         .attr("stroke-dashoffset", 0);
             }
         }
     });
+    console.log("updatePaths: finish")
 }

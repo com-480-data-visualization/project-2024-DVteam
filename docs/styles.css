@@ -213,6 +213,26 @@ button:hover {
   text-decoration: none;
 }
 
+.btn-1 {
+  color: #fff;
+  font-family: "Roboto-Regular", sans-serif;
+  padding: 2%;
+  justify-content: center;
+  background-color: #005ad5;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-decoration: none;
+
+}
+.btn-1:hover {
+  font-family: "Roboto-Bold", sans-serif;
+  color: #fff;
+  background-color: #005ad5;
+
+}
+
+
+
 .a1:hover {
   font-family: "Roboto-Bold", sans-serif;
   color: #fff;
