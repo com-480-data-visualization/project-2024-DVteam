@@ -35,15 +35,15 @@
                     <!-- player images -->
                     <div>
                         <!-- player 1 image -->
-                        <img id='player-harden' class="player-img-img" src="figures/harden.png" alt="Lebron James" width="100" height="100" onclick="changePlayer('harden'); changePlayer1('harden'); changePlayer2('harden'); changePlayer3('harden')">
+                        <img id='player-harden' class="player-img-img" src="figures/harden.png" alt="Lebron James" width="120" height="100" onclick="changePlayer('harden'); changePlayer1('harden'); changePlayer2('harden'); changePlayer3('harden')">
                     </div>
                     <div>
                         <!-- player 2 image -->
-                        <img id='player-james' class="player-img-img" src="figures/james.png" alt="Lebron James" width="100" height="100" onclick="changePlayer('james'); changePlayer1('james'); changePlayer2('james'); changePlayer3('james')">
+                        <img id='player-james' class="player-img-img" src="figures/james.png" alt="Lebron James" width="120" height="100" onclick="changePlayer('james'); changePlayer1('james'); changePlayer2('james'); changePlayer3('james')">
                     </div>
                     <div>
                         <!-- player 3 image -->
-                        <img id='player-curry' class="player-img-img" src="figures/curry.png" alt="Lebron James" width="100" height="100" onclick="changePlayer('curry'); changePlayer1('curry'); changePlayer2('curry'); changePlayer3('curry')">
+                        <img id='player-curry' class="player-img-img" src="figures/curry.png" alt="Lebron James" width="120" height="100" onclick="changePlayer('curry'); changePlayer1('curry'); changePlayer2('curry'); changePlayer3('curry')">
                     </div>
                 </div>
             </div>
@@ -62,11 +62,11 @@
                     </div>
                     <div class="player-stats">
                         <!-- player selected stats -->
-                        <div>
+                        <div class="stats-column">
                             <p id="player-born"></p>
                             <p id="player-since"></p>
                         </div>
-                        <div>
+                        <div class="stats-column">
                             <p id="player-height"></p>
                             <p id="player-weight"></p>
                         </div>
@@ -114,9 +114,9 @@
         </div>
         <div class="vis-2">
             <div class="vis-chart">
-                <div id="chart1"></div>
-                <div id="chart2"></div>
-                <div id="chart3"></div>
+                <div class="radialchart" id="chart1"></div>
+                <div class="radialchart" id="chart2"></div>
+                <div class="radialchart" id="chart3"></div>
             </div>
             <div class="vis-text">
                 <h1>Season Shot Statistics</h1>
