@@ -12,11 +12,11 @@
 
 The National Basketball Association (NBA) is known for its thrilling games and exceptional athletes that attract fans worldwide. As the 2023 season approaches, analyzing player data is critical for fans, analysts, and coaches alike, allowing them to clearly compare information about different players. However, the vast amount of available performance data is often raw and unprocessed, lacking systematic organization and insightful visualization. To address these challenges, we selected a dataset that includes comprehensive performance metrics for popular players such as LeBron James, James Harden, and Stephen Curry for the 2023 NBA season. The dataset provides detailed information on shot attempts, timing, distance, and scoring. We have converted this data into an interactive visualization format to get a clear picture of a player's strengths and performance.
 
-### Link to Milestone 3 🌙
+### Link to Milestone 3 ⭐⭐
 
 Our website:  [Press here to see our website!](https://com-480-data-visualization.github.io/project-2024-DVteam/)
 
-ProcessBook: 
+ProcessBook:  [Press here to see our Process Book!](https://github.com/com-480-data-visualization/project-2024-DVteam/blob/master/Process%20book.pdf)
 
 Video:
 
