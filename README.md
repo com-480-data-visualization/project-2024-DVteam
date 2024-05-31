@@ -23,7 +23,7 @@ ProcessBook:  [Press here to see our Process Book!](https://github.com/com-480-d
 
 Here is the vedio with explanation of our visualization. There might be lag because zoom is stuck, but it's fine on the webpage.
 
-Video:https:[Link to our video ](//youtu.be/cmURJThA7jE)
+Video: [Link to our video ](//youtu.be/cmURJThA7jE)
 
 For reference here is the data base we've chosen. 
 
